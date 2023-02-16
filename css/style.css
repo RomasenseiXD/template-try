@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #14152a;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight:bold ;
+    border: 2px solid #ffff ;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+nav p{
+    color: #ffffff;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    color:#ffffff;
+    display: flex; 
+    margin: 15px; 
+    font-size: 20px;
+    
+}
