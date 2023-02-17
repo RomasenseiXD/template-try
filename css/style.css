@@ -1,11 +1,12 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffff;
 }
 
 body{
-    background-color: #14152a;
+    background-color: #13011f;
 }
 
 nav{
@@ -13,16 +14,31 @@ nav{
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.logoitems{
+    margin: 15%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logoitems p{
+    display: flex;
+    text-align: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .logo{
     color: #ffffff;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    display: flex;
     font-weight:bold ;
     border: 2px solid #ffff ;
-    border-radius: 25px;
+    border-radius: 60%;
     padding: 5px;
 }
 
@@ -32,12 +48,124 @@ nav p{
 
 ul{
     display: flex;
+    margin-left: 90px;
 }
 
 ul li{
     color:#ffffff;
     display: flex; 
     margin: 15px; 
-    font-size: 20px;
+    font-size: 16px;
+    cursor: pointer;
     
+}
+
+article{
+    width:60%;
+    height:30vh;
+    margin: 10% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    height: 20px;
+    background-color: #4FDF9E;
+    padding: 5px 15px;
+}
+
+.btn,h1,article p{
+    margin: 12px;
+    text-align: center;
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: #13011f;
+    transition: 0.1s ease;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px dashed #ffffff;
+}
+
+h1{
+    font-size:2.5rem;
+}
+
+article p{
+    font-size:14px;
+}
+
+@media screen and (max-width:768px) {
+    
+    body{
+        height:100vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logoitems p{
+        display: none;
+    }
+
+    .logoitems{
+        margin: 5%;
+    }
+    header{
+        width: 100%;
+        display: flex;
+    }
+    nav{
+        
+        text-align: center;
+        justify-content: center;
+        padding: 5%;
+    }
+    ul{
+        margin: auto;
+    }
+    ul li{
+        color:#ffffff;
+        display: flex; 
+        margin: 5px; 
+        font-size: 16px;
+        
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .logoitems p{
+        font-size: 3rem;
+    }
+    .logo{
+        font-size: 50px;
+        display: flex;
+        font-weight:bold ;
+        border: 2px solid #ffff ;
+        border-radius: 60%;
+        padding: 10px;
+    }
+
+    .logoitems{
+        margin: 5%;
+    }
+    header{
+        width: 100%;
+        display: flex;
+    }
+    nav{
+        
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    ul li{
+        color:#ffffff;
+        display: flex; 
+        margin: 20px; 
+        font-size:3.2em;
+        
+    }
+    
+
 }
