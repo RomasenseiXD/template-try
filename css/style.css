@@ -52,7 +52,7 @@ ul{
 }
 
 ul li{
-    color:#ffffff;
+    color:#ffffffc5;
     display: flex; 
     margin: 15px; 
     font-size: 16px;
@@ -61,7 +61,7 @@ ul li{
 }
 
 article{
-    width:60%;
+    width:min(60%,1000px);
     height:25vh;
     margin: 10% 20%;
     display: flex;
@@ -69,30 +69,52 @@ article{
     align-items: center;
 }
 
-.btn{
-    height: 20px;
-    background-color: #50f9ac;
-    color: #000;
-    padding: 5px 25px;
-    border: 1px solid;
-    border-radius: 5px;
+article p{
+   color: #ffffffb2;
 }
 
-.btn,h1,article p{
+.btn{
+    background: #ffffff2a;
+    color: #212035;
+    padding: 5px 25px;
+    font-size: 16px;
+    border: 1px solid #50f9ac;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover{
+    color: #000000;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    background: #50f9ac;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn:hover::before{
+height: 0%;
+}
+
+.container,h1,article p{
     margin: 12px;
     text-align: center;
-}
-.btn:hover{
-    color: rgb(255, 255, 255);
-    background-color: #13011f;
-    transition: 0.1s ease;
-    font-weight: bold;
-    cursor: pointer;
-    border: 3px dashed #ffffff;
 }
 
 h1{
     font-size:2.5rem;
+    font-family: 'news-gothic-bold-regular', sans-serif;
 }
 
 article p{
@@ -111,18 +133,37 @@ lottie-player{
 }
 
 p.othertext {
-    margin: 20px 20px 20px 505px;
+    margin: 20px 20px 20px 490px;
     padding: 10px;
+    font-family: 'Katerina Bold Oblique';;
 }
 
-.brandstxt{
+.brandstxts{
     display: flex;
     justify-content: center;
     margin: 0px 0px 60px 0px;
 }
 
-.brandstxt p{
-    margin: 10px;
+.brandstxts p{
+    margin: 30px;
+    color: #7f778f;
+}
+
+.brandtxt1{
+    font-family: "FSP DEMO - mprtr Clssc ss Blck";
+    font-size: 12px;
+}
+
+p.brandtxt2{
+    font-family: "hansief";
+    color: #a39dad;
+}
+
+.spcltxt{
+    color: #7f778f;
+    font-size: 6px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media screen and (max-width:768px) {
